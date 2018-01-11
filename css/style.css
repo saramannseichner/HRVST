@@ -1,0 +1,80 @@
+@import url("components/navbar.css");
+@import url("components/footer.css");
+
+body {
+  background: #1D1D1D;
+  color: white;
+  font-family: 'Lato', sans-serif;
+ }
+h1 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 25px;
+}
+input {
+  background-color: #1D1D1D;
+  font-size: 15px ;
+  font-family: 'Lato', sans-serif;
+  border: none;
+  border-bottom: 1px solid white;
+}
+input:hover {
+  opacity: 0.8;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.email-submission {
+  display: flex;
+  align-content: center;
+}
+
+.layout-container {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 500px 1fr 1;
+  padding-top: 100px;
+  justify-content: center;
+}
+
+.layout-text {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.layout-logo {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  padding-left: 80px
+}
+
+.logo img {
+  height: 330px;
+  width: 330px;
+}
+
+@media(max-width: 480px) {
+  .layout-container {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 480px;
+  }
+  .layout-text {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+  }
+  .layout-logo {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+  }
+  .logo img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+
